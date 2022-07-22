@@ -8,6 +8,10 @@ const database = {
       id: 2,
       name: "Projectium",
     },
+    {
+      id: 3,
+      name: "Vibranium"
+    },
   ],
   facilities: [
     {
@@ -17,6 +21,10 @@ const database = {
     {
       id: 2,
       name: "Io",
+    },
+    {
+      id: 3,
+      name: "Xer"
     },
   ],
   colonies: [
@@ -46,17 +54,25 @@ const database = {
   transientState: {},
 };
 //get function to get each colony
-export const getColonies = () => {
-  return database.colonies.map((colony) => ({ ...colony }));
-};
+
+
+//function setting state of colony
+
+export const setTransport = (transportId) =>{
+  database.transientState.selectedTransport = transportId;
+  document.dispatchEvent(new CustomEvent("statechanged"));
+}
 
 //function setting state of colony
 export const setColony = (colonyId) => {
   database.transientState.selectedColony = colonyId;
   document.dispatchEvent(new CustomEvent("stateChanged"));
-}
+};
 
-
+export const setMineral = (mineralId) => {
+  database.transientState.selectedMineral = mineralId;
+  document.dispatchEvent(new CustomEvent("stateChanged"));
+};
 
 export const setFacility = (facilityId) => {
   database.transientState.selectedFacility = facilityId;
@@ -66,5 +82,19 @@ export const setFacility = (facilityId) => {
 export const getFacilities = () => {
   return database.facilities.map((f) => ({ ...f }));
 };
+
+export const getMinerals = () => {
+  return database.minerals.map((mineral)=> ({...mineral}))
+};
+
+export const getColonies = () => {
+  return database.colonies.map((colony) => ({ ...colony }));
+};
+
+export const getTransports = () =>{
+  return database.transports.map(transport=>({...transport}))
+};
+
+
 
 
