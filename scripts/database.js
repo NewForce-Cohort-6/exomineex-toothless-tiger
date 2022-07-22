@@ -76,7 +76,11 @@ export const setFacility = (facilityId) => {
 };
 
 export const getFacilities = () => {
-  return database.facilities.map((f) => ({ ...f }));
+  return database.facilities.map((facility) => ({ ...facility }));
+};
+
+export const getTransports = () =>{
+  return database.transports.map(transport=>({...transport}))
 };
 
 export const getMinerals = () => {
@@ -86,11 +90,5 @@ export const getMinerals = () => {
 export const getColonies = () => {
   return database.colonies.map((colony) => ({ ...colony }));
 };
-
-export const getTransports = () =>{
-  return database.transports.map(transport=>({...transport}))
-};
-
-
 
 
