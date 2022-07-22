@@ -1,4 +1,4 @@
-import {fact} from "./facilities.js"
+//import {} from "database.js"
 
 
 
@@ -20,7 +20,6 @@ export const Exomine = () => {
         </section>
         <section class="select-a-facility">
         <p>Select a facility</p>
-        ${fact()}
         </section>
         <section class="select-a-transport">
         <p>Select a transport</p>
