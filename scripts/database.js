@@ -28,6 +28,10 @@ const database = {
       id: 2,
       name: "Jupiter",
     },
+    {
+      id:3,
+      name: "Venus"
+    }
   ],
   transports : [
     {
@@ -41,6 +45,18 @@ const database = {
   ],
   transientState: {},
 };
+//get function to get each colony
+export const getColonies = () => {
+  return database.colonies.map((colony) => ({ ...colony }));
+};
+
+//function setting state of colony
+export const setColony = (colonyId) => {
+  database.transientState.selectedColony = colonyId;
+  document.dispatchEvent(new CustomEvent("stateChanged"));
+}
+
+
 
 export const setFacility = (facilityId) => {
   database.transientState.selectedFacility = facilityId;
