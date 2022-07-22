@@ -18,6 +18,10 @@ const database = {
       id: 2,
       name: "Io",
     },
+    {
+      id: 3,
+      name: "Xer"
+  }
   ],
   colonies: [
     {
