@@ -75,6 +75,16 @@ export const setFacility = (facilityId) => {
   document.dispatchEvent(new CustomEvent("stateChanged"));
 };
 
+
+=======
+export const getFacilities = () => {
+  return database.facilities.map((facility) => ({ ...facility }));
+};
+
+export const getTransports = () =>{
+  return database.transports.map(transport=>({...transport}))
+};
+
 export const getMinerals = () => {
   return database.minerals.map((mineral) => ({ ...mineral}));
 };
@@ -82,15 +92,6 @@ export const getMinerals = () => {
 export const getColonies = () => {
   return database.colonies.map((colony) => ({ ...colony }));
 };
-
-export const getTransports = () =>{
-  return database.transports.map(transport=>({...transport}))
-};
-
-export const getFacilities = () => {
-  return database.facilities.map(facility=>({...facility}))
-}
-
 
 
 
