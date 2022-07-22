@@ -1,5 +1,7 @@
 //import {} from "database.js"
 
+import { civilizations } from "./Colonies.js"
+
 
 
 
@@ -14,6 +16,7 @@ export const Exomine = () => {
         <h2>Colonies</h2>
         <br>
         <p>Select a colony:</p>
+        ${civilizations()}
         </section>
         <section class="select-a-mineral">
         <p>Select a mineral</p>
