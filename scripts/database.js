@@ -42,13 +42,22 @@ const database = {
   transientState: {},
 };
 
+export const setTransport = (transportId) =>{
+  database.transientState.selectedTransport = transportId;
+  document.dispatchEvent(new CustomEvent("statechanged"));
+}
+
 export const setFacility = (facilityId) => {
   database.transientState.selectedFacility = facilityId;
   document.dispatchEvent(new CustomEvent("stateChanged"));
 };
 
 export const getFacilities = () => {
-  return database.facilities.map((f) => ({ ...f }));
+  return database.facilities.map((facility) => ({ ...facility }));
+};
+
+export const getTransports = () =>{
+  return database.transports.map(transport=>({...transport}))
 };
 
 
