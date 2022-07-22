@@ -91,10 +91,4 @@ export const getColonies = () => {
   return database.colonies.map((colony) => ({ ...colony }));
 };
 
-export const getTransports = () =>{
-  return database.transports.map(transport=>({...transport}))
-};
-
-
-
 

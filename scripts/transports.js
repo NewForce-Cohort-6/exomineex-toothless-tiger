@@ -1,4 +1,4 @@
-import { getTransports, setTransport} from "./database";
+import { getTransports, setTransport} from "./database.js"
 
 const transports = getTransports()
 

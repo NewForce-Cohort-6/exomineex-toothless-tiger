@@ -1,5 +1,6 @@
 //import {} from "database.js"
-
+import {Deliverys} from "./transports.js"
+//import {}
 
 
 
@@ -23,6 +24,7 @@ export const Exomine = () => {
         </section>
         <section class="select-a-transport">
         <p>Select a transport</p>
+        ${Deliverys()}
         </section>
 
         <article class="Space-Cart">
