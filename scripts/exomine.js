@@ -1,9 +1,7 @@
-//import {} from "database.js"
-import {fact} from "./facilities.js"
+import { Minerals } from "./minerals.js"
 import {Deliverys} from "./transports.js"
-import {civilizations} from "./Colonies.js"
-import {Minerals} from "./minerals.js"
 
+import { civilizations } from "./Colonies.js"
 
 
 
@@ -16,20 +14,20 @@ export const Exomine = () => {
         </header>
         <article class="Dropdowns">
         <section class="select-a-colony">
+        <h2>Colonies</h2>
         <br>
-        <p>Select a Colony</p>
+        <p>Select a colony:</p>
         ${civilizations()}
         </section>
         <section class="select-a-mineral">
-        <p>Select a Mineral</p>
+        <p>Select a mineral</p>
         ${Minerals()}
         </section>
         <section class="select-a-facility">
-        <p>Select a Facility</p>
-        ${fact()}
+        <p>Select a facility</p>
         </section>
         <section class="select-a-transport">
-        <p>Select a Transport</p>
+        <p>Select a transport</p>
         ${Deliverys()}
         </section>
 
