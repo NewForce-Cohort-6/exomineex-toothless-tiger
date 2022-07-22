@@ -25,7 +25,8 @@ const database = {
     {
       id: 3,
       name: "Xer"
-    },
+  }
+    
   ],
   colonies: [
     {
