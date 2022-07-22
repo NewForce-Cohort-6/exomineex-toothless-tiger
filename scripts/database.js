@@ -37,9 +37,9 @@ const database = {
       name: "Jupiter",
     },
     {
-      id: 3,
-      name: "Venus",
-    },
+      id:3,
+      name: "Venus"
+    }
   ],
   transports : [
     {
@@ -53,6 +53,10 @@ const database = {
   ],
   transientState: {},
 };
+//get function to get each colony
+
+
+//function setting state of colony
 
 export const setTransport = (transportId) =>{
   database.transientState.selectedTransport = transportId;
