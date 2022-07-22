@@ -9,9 +9,9 @@ const database = {
       name: "Projectium",
     },
     {
-      id: 3,
-      name: "Vibranium"
-    },
+      id:3,
+      name: "Vibrainium"
+    }
   ],
   facilities: [
     {
@@ -25,8 +25,7 @@ const database = {
     {
       id: 3,
       name: "Xer"
-  }
-    
+    },
   ],
   colonies: [
     {
@@ -76,6 +75,8 @@ export const setFacility = (facilityId) => {
   document.dispatchEvent(new CustomEvent("stateChanged"));
 };
 
+
+=======
 export const getFacilities = () => {
   return database.facilities.map((facility) => ({ ...facility }));
 };
@@ -85,11 +86,12 @@ export const getTransports = () =>{
 };
 
 export const getMinerals = () => {
-  return database.minerals.map((mineral)=> ({...mineral}))
+  return database.minerals.map((mineral) => ({ ...mineral}));
 };
 
 export const getColonies = () => {
   return database.colonies.map((colony) => ({ ...colony }));
 };
+
 
 
