@@ -1,4 +1,6 @@
-//import {} from "database.js"
+import { Minerals } from "./minerals.js"
+
+
 
 
 
@@ -17,6 +19,7 @@ export const Exomine = () => {
         </section>
         <section class="select-a-mineral">
         <p>Select a mineral</p>
+        ${Minerals()}
         </section>
         <section class="select-a-facility">
         <p>Select a facility</p>
