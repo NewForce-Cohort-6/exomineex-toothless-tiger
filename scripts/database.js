@@ -79,8 +79,6 @@ export const setFacility = (facilityId) => {
   document.dispatchEvent(new CustomEvent("stateChanged"));
 };
 
-
-
 export const getFacilities = () => {
   return database.facilities.map((facility) => ({ ...facility }));
 };
