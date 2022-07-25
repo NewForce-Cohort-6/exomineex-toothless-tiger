@@ -2,7 +2,7 @@ import { Minerals } from "./minerals.js"
 import {Deliverys} from "./transports.js"
 
 import { civilizations } from "./Colonies.js"
-
+import {fact} from "./facilities.js"
 
 
 
@@ -25,6 +25,7 @@ export const Exomine = () => {
         </section>
         <section class="select-a-facility">
         <p>Select a facility</p>
+        ${fact()}
         </section>
         <section class="select-a-transport">
         <p>Select a transport</p>

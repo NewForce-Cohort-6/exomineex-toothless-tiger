@@ -5,7 +5,7 @@ const facilities = getFacilities()
 document.addEventListener(
     "change",
     (event) => {
-        if (event.target.id === "facility") {
+        if (event.target.name === "facility") {
             setFacility(parseInt(event.target.value))
     }
 }
