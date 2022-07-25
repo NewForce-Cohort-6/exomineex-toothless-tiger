@@ -1,4 +1,4 @@
-import { Exomine } from "./Exomine.js"
+import { Exomine } from "./exomine.js"
 
 const mainContainer = document.querySelector("#container")
 
