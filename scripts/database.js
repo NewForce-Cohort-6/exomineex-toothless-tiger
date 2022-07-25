@@ -80,7 +80,7 @@ export const setFacility = (facilityId) => {
 };
 
 
-=======
+
 export const getFacilities = () => {
   return database.facilities.map((facility) => ({ ...facility }));
 };
